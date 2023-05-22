@@ -1,0 +1,59 @@
+﻿<Window x:Class="LegoFrame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LegoFrame"
+        Background="Red"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Border Background="Transparent"
+            BorderBrush="White"
+            BorderThickness="20"
+            Padding="20">
+        <Border Background="#ffffff">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" 
+                           Margin="0"
+                           Text="Joohyung" FontSize="24"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="0" Grid.Column="1"
+                           Margin="0,1,0,0"
+                           Text="Ahreum" FontSize="24"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" Grid.RowSpan="2"/>
+                <Image Grid.Row="1" Grid.Column="0"
+                       Margin="0 0 40 0"
+                       HorizontalAlignment="Right"
+                       Source="/Images/figure1.png"/>
+                <Image Grid.Row="1" Grid.Column="1"
+                           Margin="40 0 0 0"
+                       HorizontalAlignment="Left"
+                       Source="/Images/figure2.png"/>
+
+                <TextBlock Grid.Row="2" Grid.ColumnSpan="2"
+                           Text="Happy Wedding!" FontSize="24"
+                           FontStyle="Italic"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="3" Grid.ColumnSpan="2"
+                           Text="2023.06.04" FontSize="16"
+                           FontStyle="Italic"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+    </Border>
+</Window>
